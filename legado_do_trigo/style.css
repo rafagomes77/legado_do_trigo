@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "charter-regular";
+    src: url(./fonts/Charter\ Regular.ttf)
+}
+
+@font-face {
+    font-family: "charter-bold";
+    src: url(./fonts/Charter\ Bold.ttf)
+}
+
+@font-face {
+    font-family: "charter-bold-italic";
+    src: url(./fonts/Charter\ Bold\ Italic.ttf)
+}
+
+@font-face {
+    font-family: "charter-italic";
+    src: url(./fonts/Charter\ Italic.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --fundo-site: #f3f2f2;
+    --cafe: #5c2702;
+}
+
+.espaco_lateral {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ------------------ MENU ------------------ */
+header {
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 140px;
+}
+
+.menu {
+    max-width: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu a {
+    font-size: 25x;
+    color: var(--cafe);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "charter-regular";
+}
+
+menu a:hover {
+    color: var(--preto);
+}
+
+/* ----------------- MENU HAMBURGUER ----------------- */
+#icone-barra
+/* ------------- RESPONSIIDADE ------------ */
+
+@media screen and(max-width: 768px) {
+    #sombra {
+        backgroud-color:
+
+    }
+    #menu_botao {
+        display: block;
+        z-index: 1;
+    }
+    header{
+        position: relative;
+    }
+
+    header button{
+        width: 50px;
+
+        background: none;
+        border: none;
+
+        display: unset;
+        cursor: pointer;
+    }
+
+    header svg{
+        fill: var(--cafe)
+    }
+
+    #icone-barra{
+        display: ;
+    }
+}
