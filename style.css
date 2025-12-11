@@ -51,10 +51,14 @@ header img {
     width: 110px;
 }
 
-.menu {
+#menu {
+    /* width: 70%;
+    align-items: center; */
     display: flex;
-    flex-direction: column;
+    gap: 48px;
     align-items: center;
+    justify-content: center;
+    pointer-events: auto;
 }
 
 .menu a {
@@ -72,6 +76,9 @@ header img {
 
 .menu p {
     width: 50px;
+    margin-left: 88px;
+    color: var(--azul);
+    font-size: 25px;
 }
 
 /* -------- Menu Hamburguer ------- */
@@ -178,7 +185,7 @@ header img {
 
 /* ---------------- SOBRE O SITE ------------ */
 
-.titulo{
+.titulo {
     display: flex;
     justify-content: center;
     color: var(--azul);
@@ -247,17 +254,19 @@ header img {
     width: 65%;
 }
 
-#cardapio  {
-   display: flex;
-   margin-top: 100px;
-   margin-bottom: 100px;
+#cardapio {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 115px;
 }
+
 #cardapio-inteiro {
     /* display: flex; 
     flex-direction: column;*/
     justify-content: center;
-   margin-top: 100px;
-   margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 /* ------------------ CONTATO ----------------- */
@@ -265,8 +274,8 @@ header img {
 .campo {
     font-size: 25px;
     text-align: center;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 50px;    
+    margin-right: 10px; 
 }
 
 .titulo-campo {
@@ -289,4 +298,105 @@ header img {
 
     text-indent: 10px;
     outline: none;
+}
+
+.campo img {
+    
+    width: 40px;
+}
+
+/* ------------------- PROMOÇÕES ---------------- */
+#promocoes img {
+    width: 55%;
+}
+
+#promocoes {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 375px;
+    gap: 50px;
+}
+
+#promocoes p {
+    /* width: 50px; */
+    /* margin-left: 88px; */
+    color: var(--azul);
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#promocoes-inteiro {
+    /* display: flex; 
+    flex-direction: column;*/
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* --------------------- FOOTER ------------------- */
+
+footer {
+    height: 250px;
+    background-color: var(--azul);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    height: 300px;
+    margin-top: 65px;
+}
+
+footer img {
+    height: 140px;
+    margin-left: 80px;
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+    color: var(--branco);
+
+    font-family: "Charter-regular";
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 55px;
+}
+
+.icones-redes svg {
+    width: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    float: right;
+    margin: 10px;
+    margin-right: 50px;
+}
+
+.icones-redes a {
+    color: var(--branco);
+}
+
+.icones-redes a:hover {
+    color: var(--preto);
+}
+
+.container-grid-roda-pe img {
+    display: flex;
 }
