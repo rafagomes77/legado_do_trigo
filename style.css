@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "Charter-regular";
+    src: url(./fonts/Charter\ Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --fundo-site: #EAEAEA;
+    --cafe: #5C2702;
+    --caramelo: #9D5623;
+    --bege: #C89C7C;
+    --azul: #7BADBB;
+}
+
+body {
+    background-color: var(--fundo-site);
+}
+
+.espaco_lateral {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner {
+    background-image: url("./img/banner.jpg");
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------- Menu ------- */
+header {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 110px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 25px;
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-family: "Charter-regular";
+}
+
+.menu a:hover {
+    color: var(--azul);
+}
+
+.menu p {
+    width: 50px;
+}
+
+/* -------- Menu Hamburguer ------- */
+#icone-barras,
+#icone-x,
+#menu_botao {
+    display: none;
+}
+
+/* ----------- RESPONSIVIDADE ------------ */
+@media screen and (max-width:768px) {
+    #sombra {
+        background-color: var(--azul);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        transition: .5s;
+    }
+
+
+    #menu_botao {
+        display: block;
+        z-index: 1;
+    }
+
+
+    header {
+        position: relative;
+    }
+
+    header button {
+        width: 50px;
+
+        background: none;
+        border: none;
+
+        display: unset;
+        cursor: pointer;
+    }
+
+    header svg {
+        fill: var(--branco);
+    }
+
+    #icone-barras {
+        display: block;
+    }
+
+    nav.menu {
+        width: 200px;
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+
+        position: fixed;
+        top: 165px;
+        right: -210px;
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .menu a {
+        color: var(--branco);
+    }
+
+}
+
+/* ---------------- BANNER ------------------ */
+
+.conteudo-banner img {
+    max-width: 380px;
+    width: 50%;
+}
+
+.conteudo-banner {
+    font-size: 35px;
+    font-family: "Charter-regular";
+    color: var(--branco);
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+.conteudo-banner {
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-top: -300px;
+    margin-left: 240px;
+
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: "Charter-regular";
+    color: var(--branco);
+    list-style-type: none;
+    padding: 0;
+}
+
+/* ---------------- SOBRE O SITE ------------ */
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: var(--azul);
+}
+
+.conteudo-sobre img {
+    max-width: 280px;
+    width: 50%;
+
+}
+
+#textoSobre {
+    align-items: center;
+    margin-top: 30px;
+    width: 450px;
+    font-family: "Charter-regular";
+    font-size: 20px;
+    margin-top: 0;
+    text-align: justify;
+}
+
+.conteudo-sobre {
+    margin-left: 920px;
+}
+
+#sobre {
+    display: flex;
+}
+
+.texto_todo {
+    margin-left: 270px;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 130px;
+
+}
+
+#textoSobre {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 65px;
+    margin-left: 50px;
+}
+
+#sobre img {
+    max-width: 460px;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+/* ------------------ MENU ------------------- */
+
+.titulo-cardapio h2 {
+    margin-right: 5px;
+    align-items: center;
+    text-align: center;
+    color: #7BADBB;
+    font-size: 35px;
+    text-align: justify;
+    gap: 80px;
+}
+
+#cardapio img {
+    width: 65%;
+}
+
+#cardapio  {
+   display: flex;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+#cardapio-inteiro {
+    /* display: flex; 
+    flex-direction: column;*/
+    justify-content: center;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+/* ------------------ CONTATO ----------------- */
+
+.campo {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.titulo-campo {
+    color: var(--azul);
+    font-size: 25px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.campo input {
+    height: 40px;
+    width: 400px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+    margin-top: 40px;
+
+    border: none;
+    border-radius: 6px;
+
+    text-indent: 10px;
+    outline: none;
+}
